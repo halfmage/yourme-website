@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
   {% include 'scripts.twig' %}
-  <title>{{ title }} | TEA Stack</title>
+  <title>{{ title }} | youRme</title>
 </head>
 
 <body class="{{ env.devMode ? 'debug-screens' }}">
@@ -13,6 +14,9 @@
   {% block body %}
     {{ content|raw }}
   {% endblock %}
+  <footer class="text-center border-b border-gray-200 py-8">
+    <a href="/imprint">Imprint</a> 
+  </footer>
 </body>
 
 </html>
